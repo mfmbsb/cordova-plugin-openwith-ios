@@ -141,6 +141,10 @@
         }
     }
 }
+- (void) viewDidLoad {
+    [[self navigationController] navigationBar].topItem.rightBarButtonItem.title = @"Enviar";
+    [[self navigationController] navigationBar].topItem.leftBarButtonItem.title = @"Cancelar";
+}
 - (void) viewDidAppear:(BOOL)animated {
     [self.view endEditing:YES];
 
